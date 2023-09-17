@@ -10,6 +10,9 @@ import javax.persistence.*
 @Entity
 data class User (
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long,
+
     @Column(nullable = false)
     var email: String,
 
@@ -20,8 +23,6 @@ data class User (
     var username: String,
 
 ) {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long = 0
 
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = [CascadeType.ALL])
     val articles: MutableList<Article> = mutableListOf()
@@ -39,12 +40,13 @@ data class User (
 
 
 
-    protected constructor() : this("","", "")
+    protected constructor() : this(0,"","", "")
 
     companion object {
         fun of(email: String, password: String, username: String): User {
-            return User(email,password ,username)
+            return User(id=0,email,password ,username)
         }
     }
+
 
 }
