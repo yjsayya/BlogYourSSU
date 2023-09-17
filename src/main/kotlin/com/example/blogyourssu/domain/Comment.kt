@@ -13,7 +13,7 @@ data class Comment(
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "comment_id")
-    val id: Long,
+    var id: Long?,
 
     @Column(nullable = false, length = 255)
     var content: String? = null,
@@ -36,11 +36,11 @@ data class Comment(
     @Column(name = "updated_at")
     val updatedAt: LocalDate? = null
 
-    protected constructor() : this(0,"")
+    protected constructor() : this(null,"")
 
     companion object {
         fun of(content: String, user: User, article: Article): Comment {
-            return Comment(id = 0, content)
+            return Comment(null, content)
         }
     }
 

@@ -12,7 +12,8 @@ import javax.persistence.*
 data class Article (
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long,
+    @Column(name="article_id")
+    var id: Long?,
 
     @Column(nullable = false)
     var title: String,
@@ -39,11 +40,11 @@ data class Article (
 
 
 
-    protected constructor() : this(0,"","",)
+    protected constructor() : this(null,"","",)
 
     companion object {
         fun of(title: String, content: String, user: User): Article {
-            return Article(id=0,title, content)
+            return Article(null,title, content)
         }
     }
 

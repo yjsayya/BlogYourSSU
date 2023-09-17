@@ -11,7 +11,8 @@ import javax.persistence.*
 data class User (
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long,
+    @Column(name="user_id")
+    var id: Long?,
 
     @Column(nullable = false)
     var email: String,
@@ -39,12 +40,11 @@ data class User (
     var updatedAt : LocalDate?  = null
 
 
-
-    protected constructor() : this(0,"","", "")
+    protected constructor() : this(null, "","","")
 
     companion object {
         fun of(email: String, password: String, username: String): User {
-            return User(id=0,email,password ,username)
+            return User(null,email,password ,username)
         }
     }
 
