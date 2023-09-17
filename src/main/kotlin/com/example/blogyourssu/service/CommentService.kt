@@ -1,12 +1,12 @@
 package com.example.blogyourssu.service
 
-import com.example.blog.domain.Comment
-import com.example.blog.domain.Comment.Companion.of
-import com.example.blog.domain.User
-import com.example.blog.dto.res.comment.CommentCreateResDto
-import com.example.blog.dto.res.comment.CommentUpdateResDto
-import com.example.blog.error.BlogApplicationException
-import com.example.blog.error.ErrorCode
+import com.example.blogyourssu.domain.Comment
+import com.example.blogyourssu.domain.Comment.Companion.of
+import com.example.blogyourssu.domain.User
+import com.example.blogyourssu.dto.res.comment.CommentCreateResDto
+import com.example.blogyourssu.dto.res.comment.CommentUpdateResDto
+import com.example.blogyourssu.error.BlogApplicationException
+import com.example.blogyourssu.error.ErrorCode
 import com.example.blogyourssu.repository.ArticleRepository
 import com.example.blogyourssu.repository.CommentRepository
 import org.springframework.stereotype.Service

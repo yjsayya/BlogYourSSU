@@ -1,4 +1,4 @@
-package com.example.blog.dto.req.article
+package com.example.blogyourssu.dto.req.article
 
 data class ArticleCreateReqDto(
 

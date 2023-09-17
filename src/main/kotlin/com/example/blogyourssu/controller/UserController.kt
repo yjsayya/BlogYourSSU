@@ -1,9 +1,9 @@
 package com.example.blogyourssu.controller
 
 
-import com.example.blog.dto.req.user.UserJoinReqDto
-import com.example.blog.dto.req.user.UserWithdrawReqDto
-import com.example.blog.dto.res.user.UserJoinResDto
+import com.example.blogyourssu.dto.req.user.UserJoinReqDto
+import com.example.blogyourssu.dto.req.user.UserWithdrawReqDto
+import com.example.blogyourssu.dto.res.user.UserJoinResDto
 import com.example.blogyourssu.service.UserService
 import org.springframework.web.bind.annotation.*
 

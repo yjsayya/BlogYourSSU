@@ -1,6 +1,6 @@
-package com.example.blog.dto.res.comment
+package com.example.blogyourssu.dto.res.comment
 
-import com.example.blog.domain.Comment
+import com.example.blogyourssu.domain.Comment
 
 data class CommentCreateResDto (
     private val commentId: Long? = null,

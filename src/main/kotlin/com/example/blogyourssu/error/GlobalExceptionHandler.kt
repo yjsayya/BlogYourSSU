@@ -1,6 +1,6 @@
-package com.example.blog.error
+package com.example.blogyourssu.error
 
-import com.example.blog.dto.ErrorResponse
+import com.example.blogyourssu.dto.ErrorResponse
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

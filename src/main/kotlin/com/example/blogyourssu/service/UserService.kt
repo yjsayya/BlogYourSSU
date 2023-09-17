@@ -1,10 +1,10 @@
 package com.example.blogyourssu.service
 
-import com.example.blog.domain.User
-import com.example.blog.domain.User.Companion.of
-import com.example.blog.dto.res.user.UserJoinResDto
-import com.example.blog.error.BlogApplicationException
-import com.example.blog.error.ErrorCode
+import com.example.blogyourssu.domain.User
+import com.example.blogyourssu.domain.User.Companion.of
+import com.example.blogyourssu.dto.res.user.UserJoinResDto
+import com.example.blogyourssu.error.BlogApplicationException
+import com.example.blogyourssu.error.ErrorCode
 import com.example.blogyourssu.repository.UserRepository
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.stereotype.Service
@@ -49,7 +49,9 @@ open class UserService (
         val user = validateUser(email, password)
 
         // 2. 회원 탈퇴 - 진행시켜
-        userRepository.delete(user)
+        if (user != null) {
+            userRepository.delete(user)
+        }
     }
 
 

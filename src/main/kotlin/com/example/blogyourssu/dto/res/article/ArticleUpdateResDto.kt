@@ -1,6 +1,6 @@
-package com.example.blog.dto.res.article
+package com.example.blogyourssu.dto.res.article
 
-import com.example.blog.domain.Article
+import com.example.blogyourssu.domain.Article
 
 data class ArticleUpdateResDto (
 

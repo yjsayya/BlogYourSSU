@@ -1,4 +1,4 @@
-package com.example.blog.dto.req.user
+package com.example.blogyourssu.dto.req.user
 
 data class UserWithdrawReqDto(
 

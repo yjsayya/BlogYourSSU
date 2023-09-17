@@ -1,6 +1,6 @@
-package com.example.blog.dto.res.user
+package com.example.blogyourssu.dto.res.user
 
-import com.example.blog.domain.User
+import com.example.blogyourssu.domain.User
 
 data class UserJoinResDto (
     private val email: String? = null,

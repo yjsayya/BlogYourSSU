@@ -1,12 +1,12 @@
 package com.example.blogyourssu.service
 
-import com.example.blog.domain.Article
-import com.example.blog.domain.Article.Companion.of
-import com.example.blog.domain.User
-import com.example.blog.dto.res.article.ArticleCreateResDto
-import com.example.blog.dto.res.article.ArticleUpdateResDto
-import com.example.blog.error.BlogApplicationException
-import com.example.blog.error.ErrorCode
+import com.example.blogyourssu.domain.Article
+import com.example.blogyourssu.domain.Article.Companion.of
+import com.example.blogyourssu.domain.User
+import com.example.blogyourssu.dto.res.article.ArticleCreateResDto
+import com.example.blogyourssu.dto.res.article.ArticleUpdateResDto
+import com.example.blogyourssu.error.BlogApplicationException
+import com.example.blogyourssu.error.ErrorCode
 import com.example.blogyourssu.repository.ArticleRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional

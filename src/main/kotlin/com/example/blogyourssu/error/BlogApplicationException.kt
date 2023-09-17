@@ -1,11 +1,9 @@
-package com.example.blog.error
+package com.example.blogyourssu.error
 
-class BlogApplicationException(val errorCode: ErrorCode) : RuntimeException() {
 
-    private val _message: String? = null
+class BlogApplicationException(val errorCode: ErrorCode, private val customMessage: String? = null) : RuntimeException() {
 
-    fun getMessage(): String {
-        return if (_message == null) errorCode.message else "${errorCode.message}. $_message"
+    override fun toString(): String {
+        return if (customMessage == null) errorCode.message else "${errorCode.message}. $customMessage"
     }
-
 }

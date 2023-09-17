@@ -1,4 +1,4 @@
-package com.example.blog.error
+package com.example.blogyourssu.error
 
 import org.springframework.http.HttpStatus
 

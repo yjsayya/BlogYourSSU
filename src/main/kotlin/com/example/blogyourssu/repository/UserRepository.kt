@@ -1,6 +1,6 @@
 package com.example.blogyourssu.repository
 
-import com.example.blog.domain.User
+import com.example.blogyourssu.domain.User
 import org.springframework.data.jpa.repository.JpaRepository
 import java.util.*
 

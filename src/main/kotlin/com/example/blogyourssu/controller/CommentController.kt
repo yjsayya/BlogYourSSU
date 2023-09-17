@@ -1,10 +1,10 @@
 package com.example.blogyourssu.controller
 
-import com.example.blog.dto.req.comment.CommentCreateReqDto
-import com.example.blog.dto.req.comment.CommentDeleteReqDto
-import com.example.blog.dto.req.comment.CommentUpdateReqDto
-import com.example.blog.dto.res.comment.CommentCreateResDto
-import com.example.blog.dto.res.comment.CommentUpdateResDto
+import com.example.blogyourssu.dto.req.comment.CommentCreateReqDto
+import com.example.blogyourssu.dto.req.comment.CommentDeleteReqDto
+import com.example.blogyourssu.dto.req.comment.CommentUpdateReqDto
+import com.example.blogyourssu.dto.res.comment.CommentCreateResDto
+import com.example.blogyourssu.dto.res.comment.CommentUpdateResDto
 import com.example.blogyourssu.service.CommentService
 import org.springframework.web.bind.annotation.*
 

@@ -1,4 +1,4 @@
-package com.example.blog.dto.req.comment
+package com.example.blogyourssu.dto.req.comment
 
 data class CommentDeleteReqDto (
 
